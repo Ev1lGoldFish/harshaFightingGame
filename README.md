@@ -1,4 +1,4 @@
-# harshaFightingGame
+# Vs Game
 
 This is a simple HTML Canvas 2D fighting game. 
 This game can be played by two players with simple controls to move, jump, and attack.
