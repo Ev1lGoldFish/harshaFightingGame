@@ -1,0 +1,41 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- outer container -->
+  <div class="container">
+    <!-- health and timer container -->
+    <div class="health-timer-container">
+      <!-- player health -->
+      <div class="player-health">
+        <div class="player-health-lost"></div>
+        <div id="playerHealth" class="player-health-remaining"></div>
+      </div>
+      <!-- timer -->
+      <div id="timer" class="timer">10</div>
+      <!-- enemy health -->
+      <div class="enemy-health">
+        <div class="enemy-health-lost"></div>
+        <div id="enemyHealth" class="enemy-health-remaining"></div>
+      </div>
+    </div>
+    <div id="matchResult" class="match-result">Tie</div>
+    <canvas></canvas>
+  </div>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+
+  <script src="js/index.js"></script>
+</body>
