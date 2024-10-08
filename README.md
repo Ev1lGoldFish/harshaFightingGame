@@ -11,11 +11,11 @@ The **Sprite** class is the base class responsible for rendering and animating i
 - **update**: Calls draw() and animateFrames() to update the sprite’s appearance every frame.
 
 The **Fighter** class extends Sprite and adds extra functionality specific to a fighting character in the game. It handles character movement, attacks, health, and additional sprite animations.
-**Constructor**: Inherits from Sprite and adds properties like velocity for movement, health, attackBox (defines the area in which the fighter can attack), and additional sprite animations for different actions. The sprites parameter is used to store different images for the fighter's various states.
-**update**: Updates the fighter's position by applying velocity and gravity. It also updates the attack box's position based on the fighter's current position.
-**attack**: Initiates an attack by switching the sprite to the attack animation.
-**damage**: Reduces the fighter's health when they take damage, and if health drops to 0, it switches the sprite to the death animation.
-**switchSprite**: Handles changing the fighter's sprite based on the current action. It ensures that animations like attack, damage, or death take priority over other animations.
+- **Constructor**: Inherits from Sprite and adds properties like velocity for movement, health, attackBox (defines the area in which the fighter can attack), and additional sprite animations for different actions. The sprites parameter is used to store different images for the fighter's various states.
+- **update**: Updates the fighter's position by applying velocity and gravity. It also updates the attack box's position based on the fighter's current position.
+- **attack**: Initiates an attack by switching the sprite to the attack animation.
+- **damage**: Reduces the fighter's health when they take damage, and if health drops to 0, it switches the sprite to the death animation.
+- **switchSprite**: Handles changing the fighter's sprite based on the current action. It ensures that animations like attack, damage, or death take priority over other animations.
 
 ## Game Setup
 
@@ -51,9 +51,9 @@ The health bars are manipulated using the gsap.to() animation library, which dyn
 The game ends when either the player's or enemy's health reaches zero. When this happens, the matchResult() function is called to display the outcome.
 
 ### Challenges Handled:
-**Animation Control**: Ensures that animations play correctly and only when appropriate (e.g., can’t switch out of a death animation or interrupt an attack animation).
-**Gravity Simulation**: Ensures that characters fall to the ground and stop when they reach the floor level.
-**State Management**: Ensures that fighters' actions are visually represented accurately by switching between the appropriate sprites.
-**Collision Detection**: The rectangularCollision function is an efficient way to detect overlap between two objects in 2D space, which is essential for determining when an attack hits an opponent.
-**Match End Logic**: The matchResult function ensures the game properly handles different outcomes based on player health, allowing for a clean end to the game with a visible display.
-**Timer Management**: The decreaseTimer function handles the game’s time limit, ensuring that the game ends after a certain period, whether by timeout or determining a winner based on health.
+- **Animation Control**: Ensures that animations play correctly and only when appropriate (e.g., can’t switch out of a death animation or interrupt an attack animation).
+- **Gravity Simulation**: Ensures that characters fall to the ground and stop when they reach the floor level.
+- **State Management**: Ensures that fighters' actions are visually represented accurately by switching between the appropriate sprites.
+- **Collision Detection**: The rectangularCollision function is an efficient way to detect overlap between two objects in 2D space, which is essential for determining when an attack hits an opponent.
+- **Match End Logic**: The matchResult function ensures the game properly handles different outcomes based on player health, allowing for a clean end to the game with a visible display.
+- **Timer Management**: The decreaseTimer function handles the game’s time limit, ensuring that the game ends after a certain period, whether by timeout or determining a winner based on health.
