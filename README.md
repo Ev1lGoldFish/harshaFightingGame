@@ -5,10 +5,10 @@ This game can be played by two players with simple controls to move, jump, and a
 
 The game is designed using object oriented programming with two classes, Sprite and Fighter, that are used to create and animate the characters within the HTML5 canvas-based environment.
 The **Sprite** class is the base class responsible for rendering and animating images on the canvas. It has the following methods:
-**Constructor**: Takes in several properties like position, imageSrc, scale, framesMax, and an offset to fine-tune positioning. It initializes the sprite's basic properties like position, height, width, image source, and animation frames.
-**draw**: This method draws the image of the sprite onto the canvas, using drawImage(). It handles animations by drawing only a portion of the image based on framesCurrent, allowing for sprite sheet animation.
-**animateFrames**: Manages frame transitions for sprite animation. It updates the current frame after a set number of updates. Once the animation reaches the last frame, it resets to the first frame.
-**update**: Calls draw() and animateFrames() to update the sprite’s appearance every frame.
+- **Constructor**: Takes in several properties like position, imageSrc, scale, framesMax, and an offset to fine-tune positioning. It initializes the sprite's basic properties like position, height, width, image source, and animation frames.
+- **draw**: This method draws the image of the sprite onto the canvas, using drawImage(). It handles animations by drawing only a portion of the image based on framesCurrent, allowing for sprite sheet animation.
+- **animateFrames**: Manages frame transitions for sprite animation. It updates the current frame after a set number of updates. Once the animation reaches the last frame, it resets to the first frame.
+- **update**: Calls draw() and animateFrames() to update the sprite’s appearance every frame.
 
 The **Fighter** class extends Sprite and adds extra functionality specific to a fighting character in the game. It handles character movement, attacks, health, and additional sprite animations.
 **Constructor**: Inherits from Sprite and adds properties like velocity for movement, health, attackBox (defines the area in which the fighter can attack), and additional sprite animations for different actions. The sprites parameter is used to store different images for the fighter's various states.
