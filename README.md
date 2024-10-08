@@ -50,7 +50,7 @@ The health bars are manipulated using the gsap.to() animation library, which dyn
 **Game End**:
 The game ends when either the player's or enemy's health reaches zero. When this happens, the matchResult() function is called to display the outcome.
 
-###Challenges Handled:
+### Challenges Handled:
 **Animation Control**: Ensures that animations play correctly and only when appropriate (e.g., can’t switch out of a death animation or interrupt an attack animation).
 **Gravity Simulation**: Ensures that characters fall to the ground and stop when they reach the floor level.
 **State Management**: Ensures that fighters' actions are visually represented accurately by switching between the appropriate sprites.
