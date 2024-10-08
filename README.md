@@ -17,7 +17,7 @@ The **Fighter** class extends Sprite and adds extra functionality specific to a 
 **damage**: Reduces the fighter's health when they take damage, and if health drops to 0, it switches the sprite to the death animation.
 **switchSprite**: Handles changing the fighter's sprite based on the current action. It ensures that animations like attack, damage, or death take priority over other animations.
 
-##Game Setup
+## Game Setup
 
 **Gravity**:
 A gravity constant is defined to simulate natural movement (like falling), which is applied to the player and enemy characters when they are in the air.
